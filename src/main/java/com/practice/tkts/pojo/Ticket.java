@@ -5,10 +5,18 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 
 
-
 @SuppressWarnings("restriction")
 @XmlRootElement(name = "Ticket")
 @XmlAccessorType(XmlAccessType.FIELD)
+/*@XmlType(name="Ticket",propOrder={"ticketId",
+		"ticketDescription",
+		"ticketType",
+		"ticketStatus",
+		"ticketOwner",
+		"ticketSeverity",
+		"ticketPriority",
+		"customer",
+		"equipment"})*/
 public class Ticket {
 
 	private long ticketId;

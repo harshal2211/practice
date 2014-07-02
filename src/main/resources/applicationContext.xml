@@ -13,6 +13,7 @@
      
     <context:component-scan base-package="com.practice.tkts"/>
     
+    <bean id="myService" class="com.practice.tkts.services.MyService"/>
    	<context:annotation-config/>  
    	<mvc:annotation-driven/>
       

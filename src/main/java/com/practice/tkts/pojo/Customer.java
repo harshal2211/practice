@@ -3,10 +3,14 @@ package com.practice.tkts.pojo;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+import org.eclipse.persistence.oxm.annotations.XmlProperty;
 
 @SuppressWarnings("restriction")
 @XmlRootElement(name = "Customer")
 @XmlAccessorType(XmlAccessType.FIELD)
+//@XmlType(name="Ticket",propOrder={"ticketId"})
 public class Customer {
 
 	private long customerId;
